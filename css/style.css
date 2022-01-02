@@ -315,15 +315,7 @@ section.about .content .right p span:nth-child(1)::after{
     left: 32px;
     border: 1px dotted var(--danger);
 }
-.section__heading4::after{
-    content: '';
-    height: 3px;
-    width: 100px;
-    position: absolute;
-    top: 1130px;
-    left: 32px;
-    border: 1px dotted var(--danger);
-}
+
 
 section.skills .content{
     display: grid;
