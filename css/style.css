@@ -315,7 +315,15 @@ section.about .content .right p span:nth-child(1)::after{
     left: 32px;
     border: 1px dotted var(--danger);
 }
-
+/* .section__heading4::after{
+    content: '';
+    height: 3px;
+    width: 100px;
+    position: absolute;
+    top: 1130px;
+    left: 32px;
+    border: 1px dotted var(--danger);
+} */
 
 section.skills .content{
     display: grid;
@@ -498,6 +506,10 @@ section.work .wraper .portfolio .portfolio-wrapper a img{
     display: block;
 }
 
+#allow{
+    height: 100%;
+}
+
 section.work .wraper .slider_wrapper .icon-wrap{ 
    color: var(--info);
    font-size: 26px;
@@ -542,10 +554,37 @@ section.work .wraper .slider_wrapper{
     overflow: hidden;
 }
 
-section.partners .brands_wrap {
+section.partners .brands_wrap div {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    flex-direction: column;
+}
+
+section.partners .brands_wrap  div a button{
+    background: rgba(77,121,246,0.1);
+   color: var(--info);
+   padding: 4px 8px;
+   font-size: 12px;
+   border: none;
+   line-height: 24px;
+   outline: none;
+   cursor: pointer;
+   margin-bottom: 10px;
+   align-items: center;
+   justify-content: center;
+   transition: all 0.1s ease-in-out;
+}
+
+section.partners .brands_wrap  .part_head h6{
+   font-size: 2rem;
+   margin-bottom: 15px;
+   text-decoration: underline;
+}
+
+section.partners .brands_wrap  div a button:hover{
+    background-color: var(--pure);
+    
 }
 
 section.contact .wrapper{
@@ -648,6 +687,7 @@ footer{
     font-size: 14px;
     color: var(--ternary);
 }
+
 
 /* Media Queries */
 
